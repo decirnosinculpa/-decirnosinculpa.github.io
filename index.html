@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aprende a decir no sin culpa</title>
+<meta property="og:title" content="Aprende a decir no sin culpa">
+<meta property="og:description" content="Guía práctica para poner límites sin culpa. Ebook en PDF, 9,99 €.">
+<meta property="og:image" content="og.png">
+<meta property="og:type" content="product">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="portada.jpg">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+
+<meta name="description" content="Guía práctica para poner límites, expresar lo que necesitas y cuidar tus relaciones sin olvidarte de ti. Ebook en PDF, 9,99 €.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one narrow reading column that widens for a two-column hero; the book's own paper, ink and wine as the identity. */
+:root{
+  --paper:#f3ece2; --paper-2:#ebe1d3; --card:#fbf7f1;
+  --ink:#1f1a19; --ink-soft:#5f5450; --line:#d9cbb9;
+  --wine:#7a1f2b; --wine-2:#5e1520; --on-wine:#fbf3ea;
+  --display:"Playfair Display", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+:root{color-scheme:light}
+
+*{box-sizing:border-box}
+body{background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .22 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto}
+.narrow{max-width:680px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.12;margin:0}
+h2{font-size:clamp(1.8rem,4.4vw,2.6rem);font-weight:800}
+p{margin:0}
+em.w{font-style:italic;color:var(--wine)}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--wine)}
+.rule{width:56px;height:6px;background:var(--wine);border:0;margin:0}
+section{padding-block:clamp(56px,9vw,96px)}
+section+section{border-top:1px solid var(--line)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--wine);color:var(--on-wine);
+  font-weight:700;font-size:1.08rem;padding:1em 1.7em;border-radius:999px;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{background:var(--wine-2);transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn svg{width:1.1em;height:1.1em}
+
+/* hero */
+.hero{display:grid;gap:clamp(32px,6vw,72px);align-items:center;grid-template-columns:1fr}
+@media (min-width:820px){.hero{grid-template-columns:1.1fr .9fr}}
+.hero-text{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;letter-spacing:-.01em}
+.hero h1 i{color:var(--wine);font-weight:800}
+.lede{font-size:1.2rem;color:var(--ink-soft);max-width:34ch}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:6px}
+.price{font-family:var(--display);font-size:2.2rem;font-weight:800}
+.fine{font-size:.9rem;color:var(--ink-soft)}
+.cover{justify-self:center;width:min(360px,80vw);transform:rotate(1.5deg);
+  box-shadow:0 2px 0 var(--line),0 30px 60px -20px rgba(70,25,25,.35);border-radius:3px}
+
+/* problem list */
+.signs{display:grid;gap:0;margin-top:28px;border-top:1px solid var(--line)}
+.signs li{list-style:none;padding:16px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:baseline}
+.signs li span{font-family:var(--display);font-style:italic;color:var(--wine);font-weight:600;flex:none;width:1.4em}
+.signs ul{margin:0;padding:0}
+.turn{margin-top:32px;font-family:var(--display);font-size:1.5rem;font-weight:600;line-height:1.35}
+
+/* chapters: the real índice */
+.toc{margin-top:32px;columns:1;column-gap:40px}
+@media (min-width:760px){.toc{columns:2}}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:c}
+.toc li{break-inside:avoid;display:flex;gap:14px;padding:10px 0;border-bottom:1px dotted var(--line)}
+.toc .n{font-family:var(--display);font-weight:800;color:var(--wine);font-variant-numeric:tabular-nums;width:1.6em;flex:none;text-align:right}
+
+/* tools */
+.tools{display:grid;gap:16px;margin-top:32px;grid-template-columns:1fr}
+@media (min-width:640px){.tools{grid-template-columns:repeat(2,1fr)}}
+.tool{background:var(--card);border:1px solid var(--line);padding:22px 24px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.tool b{font-family:var(--display);font-size:1.25rem}
+.tool p{color:var(--ink-soft);font-size:.98rem}
+.tool.big{grid-column:1/-1}
+
+/* phrases: torn-note feel */
+.phrases{display:grid;gap:18px;margin-top:32px}
+.note{background:var(--card);border-left:6px solid var(--wine);padding:20px 24px;display:flex;flex-direction:column;gap:6px}
+.note q{font-family:var(--display);font-size:1.35rem;font-weight:600;quotes:"«" "»"}
+.note small{color:var(--ink-soft);font-size:.92rem}
+
+/* honest note */
+.honest{background:var(--paper-2);padding:28px;display:flex;flex-direction:column;gap:12px;margin-top:28px}
+
+/* offer */
+.offer{background:var(--wine);color:var(--on-wine);margin-left:calc(-1*max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)))}
+.offer-in{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:clamp(56px,9vw,96px)}
+.offer .grid{display:grid;gap:36px;align-items:center;grid-template-columns:1fr}
+@media (min-width:760px){.offer .grid{grid-template-columns:220px 1fr}}
+.offer img{width:200px;justify-self:center;box-shadow:0 20px 40px -16px rgba(0,0,0,.5)}
+.offer .big{font-family:var(--display);font-size:clamp(3.4rem,9vw,5rem);font-weight:800;line-height:1}
+.offer ul{margin:14px 0 24px;padding:0;list-style:none;display:grid;gap:6px}
+.offer li::before{content:"✓  ";font-weight:700}
+.offer .btn{background:var(--on-wine);color:var(--wine)}
+.offer .btn:hover{background:var(--paper)}
+.offer .fine{color:var(--on-wine);opacity:.8;margin-top:14px}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+details:first-of-type{border-top:1px solid var(--line);margin-top:28px}
+summary{cursor:pointer;font-weight:600;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-family:var(--display);color:var(--wine);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"–"}
+summary:focus-visible{outline:2px solid var(--wine);outline-offset:4px}
+details p{margin-top:10px;color:var(--ink-soft)}
+
+footer{padding-block:40px;font-size:.88rem;color:var(--ink-soft);text-align:center;border-top:1px solid var(--line)}
+
+/* sticky mobile buy bar */
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:5}
+.bar .btn{padding:.75em 1.3em;font-size:1rem}
+.bar strong{font-family:var(--display);font-size:1.4rem}
+@media (min-width:820px){.bar{display:none}}
+@media (max-width:819px){footer{padding-bottom:110px}}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+#ink{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+header,main,footer{position:relative;z-index:1}
+</style>
+</head>
+<body>
+
+<canvas id="ink" aria-hidden="true"></canvas>
+
+<header class="wrap">
+  <section class="hero" style="border:0">
+    <div class="hero-text">
+      <hr class="rule">
+      <h1>Aprende a decir <i>no</i> sin culpa</h1>
+      <p class="lede">Una guía práctica para poner límites, expresar lo que necesitas y cuidar tus relaciones sin olvidarte de ti.</p>
+      <div class="buyrow">
+        <a class="btn buy" href="#comprar">Quiero el libro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="price">9,99 €</span>
+      </div>
+      <p class="fine">Ebook en PDF · 41 páginas · descarga inmediata tras el pago</p>
+    </div>
+    <img class="cover" src="portada.jpg" alt="Portada del libro Aprende a decir no sin culpa: una mujer sentada en un sillón granate">
+  </section>
+</header>
+
+<main>
+<section class="wrap"><div class="narrow">
+  <p class="eyebrow">¿Te suena?</p>
+  <h2 style="margin-top:12px">Alguien te pide algo y, antes de pensarlo, ya has dicho que <em class="w">sí</em>.</h2>
+  <ul class="signs">
+    <li><span>·</span>Respondes en menos de un minuto, aunque no sepas si puedes.</li>
+    <li><span>·</span>Te arrepientes poco después de enviar el mensaje.</li>
+    <li><span>·</span>Tu cuerpo se tensa, pero tu respuesta suena entusiasta.</li>
+    <li><span>·</span>Aceptas primero y luego buscas cómo encajarlo.</li>
+    <li><span>·</span>Dices «no pasa nada» cuando sí pasa.</li>
+  </ul>
+  <p class="turn">Aprender a decir que no no consiste en volverte fría. Consiste en que tus síes signifiquen algo.</p>
+</div></section>
+
+<section class="wrap"><div class="narrow">
+  <p class="eyebrow">Qué hay dentro</p>
+  <h2 style="margin-top:12px">Trece capítulos breves, cada uno con una dificultad concreta</h2>
+  <p style="margin-top:16px;color:var(--ink-soft)">Cada capítulo trae una situación de ejemplo, una explicación, formas prácticas de responder, un diálogo, un ejercicio para escribir y una pequeña acción para probar esa semana.</p>
+</div>
+  <div class="toc narrow" style="max-width:860px"><ol>
+    <li><span class="n">1</span>El hábito de decir sí antes de pensar</li>
+    <li><span class="n">2</span>Lo que temes perder cuando dices que no</li>
+    <li><span class="n">3</span>Cómo reconocer tus límites</li>
+    <li><span class="n">4</span>Asertiva, pasiva, agresiva: tres maneras de responder</li>
+    <li><span class="n">5</span>Haz una pausa y elige tu respuesta</li>
+    <li><span class="n">6</span>Decir que no sin una larga justificación</li>
+    <li><span class="n">7</span>Límites con la familia y las amigas</li>
+    <li><span class="n">8</span>Límites en la pareja y en tu privacidad</li>
+    <li><span class="n">9</span>Negociar prioridades en el trabajo</li>
+    <li><span class="n">10</span>Dinero, favores y disponibilidad digital</li>
+    <li><span class="n">11</span>Insistencia, críticas y culpa</li>
+    <li><span class="n">12</span>Revisar un compromiso que ya aceptaste</li>
+    <li><span class="n">13</span>Seguir practicando y respetar los límites de los demás</li>
+  </ol></div>
+</section>
+
+<section class="wrap"><div class="narrow">
+  <p class="eyebrow">Herramientas para usar una y otra vez</p>
+  <h2 style="margin-top:12px">Cinco materiales prácticos al final del libro</h2>
+  <div class="tools">
+    <div class="tool big"><b>30 frases para decir no</b><p>Organizadas por situación: ganar tiempo, invitaciones, familia, pareja, trabajo, dinero y mensajes. Cada una indica cuándo usarla.</p></div>
+    <div class="tool"><b>Siete días de práctica</b><p>Una tarea al día, de menor a mayor dificultad.</p></div>
+    <div class="tool"><b>Hoja para preparar una conversación</b><p>Ocho preguntas para llegar con las ideas claras.</p></div>
+    <div class="tool"><b>Registro para después</b><p>Compara lo que temías con lo que pasó realmente.</p></div>
+    <div class="tool"><b>Antes de aceptar un pedido</b><p>Una lista rápida para cuando dudes.</p></div>
+  </div>
+</div></section>
+
+<section class="wrap"><div class="narrow">
+  <p class="eyebrow">Tres frases del libro</p>
+  <h2 style="margin-top:12px">Frases cortas que puedes decir mañana</h2>
+  <div class="phrases">
+    <div class="note"><q>Déjame mirar la agenda y te digo algo antes de las ocho.</q><small>Para ganar tiempo cuando el pedido no es urgente y dudas.</small></div>
+    <div class="note"><q>Puedo hacerlo, pero entonces esto pasa al lunes. ¿Te parece?</q><small>Para una tarea nueva cuando ya tienes la agenda llena.</small></div>
+    <div class="note"><q>Te quiero, y mi respuesta sigue siendo no.</q><small>Para cuando la insistencia apela al cariño.</small></div>
+  </div>
+  <div class="honest">
+    <p class="eyebrow">Para que sepas lo que compras</p>
+    <p>Es una guía de comunicación con ejemplos ficticios y ejercicios. No es un tratamiento psicológico ni sustituye la ayuda de una profesional. Tampoco promete que la culpa desaparezca: te ayuda a que deje de decidir por ti.</p>
+  </div>
+</div></section>
+
+<section class="offer" id="comprar"><div class="offer-in"><div class="wrap narrow" style="max-width:820px">
+  <div class="grid">
+    <img src="portada.jpg" alt="">
+    <div>
+      <p class="eyebrow" style="color:var(--on-wine);opacity:.85">Ebook en PDF</p>
+      <p class="big" style="margin-top:8px">9,99 €</p>
+      <ul>
+        <li>13 capítulos con ejemplos, diálogos y ejercicios</li>
+        <li>30 frases listas para decir no</li>
+        <li>Plan de siete días y hojas de trabajo</li>
+        <li>Léelo en el móvil, la tablet o el ordenador</li>
+      </ul>
+      <a class="btn buy" href="#comprar">Comprar ahora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="fine">Pago seguro con tarjeta. Recibes el PDF al momento.</p>
+    </div>
+  </div>
+</div></div></section>
+
+<section class="wrap"><div class="narrow">
+  <p class="eyebrow">Preguntas frecuentes</p>
+  <h2 style="margin-top:12px">Antes de comprar</h2>
+  <details><summary>¿Cómo recibo el libro?</summary><p>Después del pago recibes el acceso para descargar el PDF. Puedes guardarlo y leerlo cuando quieras.</p></details>
+  <details><summary>¿En qué dispositivos puedo leerlo?</summary><p>En cualquiera que abra un PDF: móvil, tablet u ordenador. Si prefieres hacer los ejercicios a mano, también puedes imprimirlo.</p></details>
+  <details><summary>¿Cómo puedo pagar?</summary><p>Con tarjeta de débito o crédito en la página de pago segura.</p></details>
+  <details><summary>¿Es para mí si casi nunca digo que no?</summary><p>Sí. El libro empieza por algo previo a decir que no: aprender a pedir tiempo antes de responder. Los seis primeros capítulos construyen las bases paso a paso.</p></details>
+  <details><summary>¿Los ejemplos son reales?</summary><p>No. Todas las personas y situaciones son ficticias, construidas a partir de escenas cotidianas para que puedas reconocerte en ellas.</p></details>
+</div></section>
+</main>
+
+<footer class="wrap">
+  <p>Aprende a decir no sin culpa · Ebook en PDF</p>
+  <p style="margin-top:6px">Este libro tiene un propósito divulgativo y no sustituye el consejo de profesionales de la salud, del derecho o de las finanzas.</p>
+</footer>
+
+<div class="bar"><strong>9,99 €</strong><a class="btn buy" href="#comprar">Comprar</a></div>
+
+<script>
+/* Pega aquí el enlace de pago de EscalePay */
+const CHECKOUT_URL = "https://checkout.escalepay.com/7170513";
+(function(){
+  const cv = document.getElementById('ink');
+  const ctx = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W = 0, H = 0, dpr = 1, color = '122,31,43';
+  const drops = [];
+  function readColor(){
+    const v = getComputedStyle(document.documentElement).getPropertyValue('--wine').trim();
+    const m = v.match(/^#?([0-9a-f]{6})$/i);
+    if (m) { const n = parseInt(m[1],16); color = ((n>>16)&255)+','+((n>>8)&255)+','+(n&255); }
+  }
+  function size(){
+    dpr = Math.min(window.devicePixelRatio||1, 2);
+    W = innerWidth; H = innerHeight;
+    cv.width = W*dpr; cv.height = H*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  size(); readColor();
+  addEventListener('resize', size);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', readColor);
+  new MutationObserver(readColor).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+  let last = 0, lx = -999, ly = -999;
+  function add(x, y, big){
+    drops.push({x, y, r: big? 6 : 2, max: big? 140+Math.random()*80 : 40+Math.random()*30,
+      life: 1, rings: big? 3 : 1, wob: Math.random()*6.28});
+    if (drops.length > 70) drops.shift();
+    if (!running) { running = true; requestAnimationFrame(tick); }
+  }
+  addEventListener('pointerdown', e => add(e.clientX, e.clientY, true), {passive:true});
+  addEventListener('pointermove', e => {
+    const now = performance.now();
+    const d = Math.hypot(e.clientX-lx, e.clientY-ly);
+    if (now - last > 45 && d > 18) { last = now; lx = e.clientX; ly = e.clientY; add(lx, ly, false); }
+  }, {passive:true});
+
+  let running = false;
+  function tick(){
+    ctx.clearRect(0,0,W,H);
+    for (let i = drops.length-1; i >= 0; i--) {
+      const p = drops[i];
+      p.r += (p.max - p.r) * 0.045;
+      p.life -= p.rings > 1 ? 0.011 : 0.022;
+      if (p.life <= 0) { drops.splice(i,1); continue; }
+      for (let k = 0; k < p.rings; k++) {
+        const rr = p.r * (1 - k*0.28);
+        if (rr <= 1) continue;
+        ctx.beginPath();
+        for (let a = 0; a <= 6.29; a += 0.2) {
+          const w = 1 + 0.035*Math.sin(a*3 + p.wob + k);
+          const px = p.x + Math.cos(a)*rr*w, py = p.y + Math.sin(a)*rr*w;
+          a === 0 ? ctx.moveTo(px,py) : ctx.lineTo(px,py);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = 'rgba('+color+','+(0.28*p.life*(1-k*0.25))+')';
+        ctx.lineWidth = (p.rings>1 ? 3.2 : 1.6) * (0.4 + p.life);
+        ctx.stroke();
+      }
+      ctx.beginPath(); ctx.arc(p.x, p.y, Math.max(0.5, 5*p.life*(p.rings>1?1:0.5)), 0, 6.29);
+      ctx.fillStyle = 'rgba('+color+','+(0.18*p.life)+')'; ctx.fill();
+    }
+    if (drops.length) requestAnimationFrame(tick); else { running = false; ctx.clearRect(0,0,W,H); }
+  }
+  if (reduce) { add = function(){}; }
+  else { setTimeout(()=>add(W*0.78, H*0.32, true), 600); }
+})();
+
+if (CHECKOUT_URL) {
+  document.querySelectorAll("a.buy").forEach(a => { a.href = CHECKOUT_URL; a.target = "_blank"; a.rel = "noopener"; });
+}
+</script>
+
+</body>
+</html>
