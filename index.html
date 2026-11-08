@@ -105,6 +105,16 @@ section+section{border-top:1px solid var(--line)}
 .offer .btn:hover{background:var(--paper)}
 .offer .fine{color:var(--on-wine);opacity:.8;margin-top:14px}
 
+/* bonus */
+.bonus{display:grid;gap:28px;align-items:center;grid-template-columns:1fr;background:var(--card);border:1px solid var(--line);padding:clamp(20px,4vw,32px);margin-top:32px}
+@media (min-width:700px){.bonus{grid-template-columns:190px 1fr}}
+.bonus img{width:170px;justify-self:center;transform:rotate(-2deg);box-shadow:0 18px 36px -16px rgba(70,25,25,.4)}
+.bonus .tag{display:inline-block;background:var(--wine);color:var(--on-wine);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35em .8em;border-radius:999px}
+.bonus h3{font-size:1.6rem;margin-top:10px}
+.bonus ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px;color:var(--ink-soft);font-size:.98rem}
+.bonus li::before{content:"✓  ";color:var(--wine);font-weight:700}
+.bonus .val{margin-top:14px;font-size:.92rem;color:var(--ink-soft)}
+.bonus .val s{opacity:.8}
 /* faq */
 details{border-bottom:1px solid var(--line);padding:18px 0}
 details:first-of-type{border-top:1px solid var(--line);margin-top:28px}
@@ -143,7 +153,7 @@ header,main,footer{position:relative;z-index:1}
         <a class="btn buy" href="#comprar">Quiero el libro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <span class="price">9,99 €</span>
       </div>
-      <p class="fine">Ebook en PDF · 41 páginas · descarga inmediata tras el pago</p>
+      <p class="fine">Ebook en PDF · 41 páginas + cuaderno de regalo · descarga inmediata</p>
     </div>
     <img class="cover" src="portada.jpg" alt="Portada del libro Aprende a decir no sin culpa: una mujer sentada en un sillón granate">
   </section>
@@ -195,6 +205,21 @@ header,main,footer{position:relative;z-index:1}
     <div class="tool"><b>Registro para después</b><p>Compara lo que temías con lo que pasó realmente.</p></div>
     <div class="tool"><b>Antes de aceptar un pedido</b><p>Una lista rápida para cuando dudes.</p></div>
   </div>
+  <div class="bonus">
+    <img src="cuaderno.webp" alt="Portada del Cuaderno de práctica: 30 días para decir no sin culpa">
+    <div>
+      <span class="tag">Regalo incluido</span>
+      <h3>Cuaderno de práctica: 30 días para decir no sin culpa</h3>
+      <ul>
+        <li>Plan de 30 días con una tarea pequeña cada día</li>
+        <li>6 guiones para conversaciones difíciles: jefe, familia, pareja, amigas, WhatsApp y clientes</li>
+        <li>Esquema «¿Sí o no?» para decidir en menos de un minuto</li>
+        <li>Diario de límites de 4 semanas y 30 tarjetas para recortar</li>
+        <li>5 fondos de pantalla para el móvil</li>
+      </ul>
+      <p class="val">30 páginas para imprimir o rellenar en la tablet. Lo recibes junto con el libro, sin coste extra.</p>
+    </div>
+  </div>
 </div></section>
 
 <section class="wrap"><div class="narrow">
@@ -222,6 +247,7 @@ header,main,footer{position:relative;z-index:1}
         <li>30 frases listas para decir no</li>
         <li>Plan de siete días y hojas de trabajo</li>
         <li>Léelo en el móvil, la tablet o el ordenador</li>
+        <li><strong>Regalo:</strong> Cuaderno de práctica de 30 días y 5 fondos de pantalla</li>
       </ul>
       <a class="btn buy" href="#comprar">Comprar ahora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <p class="fine">Pago seguro con tarjeta. Recibes el PDF al momento.</p>
@@ -234,6 +260,7 @@ header,main,footer{position:relative;z-index:1}
   <h2 style="margin-top:12px">Antes de comprar</h2>
   <details><summary>¿Cómo recibo el libro?</summary><p>Después del pago recibes el acceso para descargar el PDF. Puedes guardarlo y leerlo cuando quieras.</p></details>
   <details><summary>¿En qué dispositivos puedo leerlo?</summary><p>En cualquiera que abra un PDF: móvil, tablet u ordenador. Si prefieres hacer los ejercicios a mano, también puedes imprimirlo.</p></details>
+  <details><summary>¿Qué incluye el regalo?</summary><p>El Cuaderno de práctica de 30 días (30 páginas en PDF con plan diario, guiones, diario y tarjetas) y 5 fondos de pantalla para el móvil. Los recibes junto con el libro, sin pagar nada más.</p></details>
   <details><summary>¿Cómo puedo pagar?</summary><p>Con tarjeta de débito o crédito en la página de pago segura.</p></details>
   <details><summary>¿Es para mí si casi nunca digo que no?</summary><p>Sí. El libro empieza por algo previo a decir que no: aprender a pedir tiempo antes de responder. Los seis primeros capítulos construyen las bases paso a paso.</p></details>
   <details><summary>¿Los ejemplos son reales?</summary><p>No. Todas las personas y situaciones son ficticias, construidas a partir de escenas cotidianas para que puedas reconocerte en ellas.</p></details>
